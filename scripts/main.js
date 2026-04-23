@@ -3,7 +3,6 @@ let menuButton = document.querySelectorAll("#js-triggers a")[0];
 let modalButton = document.querySelectorAll("#js-triggers a")[1];
 let modal = document.querySelector(".modal-panel");
 let modalBox = document.querySelector(".modal-content-pane");
-let modalText = document.querySelector(".modal-content");
 
 menuButton.addEventListener("click", (event) => {
     event.preventDefault();
@@ -20,15 +19,19 @@ modalButton.addEventListener("click", (event) => {
     event.preventDefault();
     nav.style.display = "none";
     modal.style.display = "block";
-    modalText.innerHTML = "This is a modal panel.";
 
 });
 
-modal.addEventListener("click", (event) => {
+modal.addEventListener("click", () => {
     modal.style.display = "none";
 });
 
 modalBox.addEventListener("click", (event) => {
-    event.preventDefault();
-    modal.style.display = "none";
+    event.stopPropagation();
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        modal.style.display = "none";
+    }
 });
