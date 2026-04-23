@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    overflow: hidden;
+}
+
+nav {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #39a;
+    color: white;
+    padding: 20px;
+}
+
+#js-trigger {
+    text-align: center;
+}
+
+#js-trigger button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#js-triggers li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+#js-triggers a {
+    color: white;
+    text-decoration: none;
+}
+
+#js-triggers a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+h1 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
