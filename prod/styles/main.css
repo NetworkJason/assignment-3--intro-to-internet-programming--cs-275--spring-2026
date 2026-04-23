@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    padding: 15px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+nav a {
+    display: block;
+    padding: 15px 30px;
+    color: #39a;
+    text-decoration: none;
+    border: 1px solid #39a;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #39a;
+    color: #fff;
+}
+
+nav ul ul {
+    display: none;
+}
+
+
+@media (max-width: 736px) {
+nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: transparent;
+    padding: 15px;
+    z-index: 1;
+}
+
+nav a {
+    color: #39a;
+    margin-top: 30px;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #39a;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #39a;
+    color: white;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #39a;
+    color: white;
+    padding: 20px;
+}
+
+#js-triggers {
+    text-align: right;
+    padding-right: 50px;
+}
+
+#js-triggers li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+#js-triggers a {
+    color: white;
+    text-decoration: none;
+}
+
+#js-triggers a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+h1 {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.modal-panel {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.modal-content-pane {
+    width: 90%;
+    max-width: 550px;
+    height: 70%;
+    max-height: 550px;
+    margin: 60px auto;
+    background-color: #fff;
+}
+
+.modal-content {
+    padding: 20px;
+}

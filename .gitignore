@@ -13,3 +13,5 @@
 
 !styles/
 !scripts/
+!prod/
+!prod/**
